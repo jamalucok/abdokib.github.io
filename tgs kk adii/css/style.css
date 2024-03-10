@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/* jumbotron */
+.jumbotron {
+    padding-top: 6rem ;
+    background-color: #c499f3;
+}
+/* end jumbotron */
+
+/* gamabr */
+#gambar {
+    background-color: #c499f3;
+
+}
+section {
+    padding-top: 5rem;
+}
+#footer {
+    margin-top: -40px;
+}
+ .ikon {
+    margin-top: -27px;
+}
+.q {
+    background-color: #c499f3;
+    border: 4px;
+}
+/* animasi */
+.wow {
+    border-radius: 5px;
+    
+    background-color: #c499f3;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <style>
+        .animasi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    min-height: 100vh;
+}
+.container {
+    perspective: 800px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.kubus {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: animasi 5s infinite linear;
+}
+.muka {
+    width: 200px;
+    height:200px;
+    position: absolute;
+    border: 1px solid #333;
+    opacity: 0.8;
+}
+.muka:nth-child(1) {
+    transform: rotateY(0deg) translateZ(100px);
+    background-color: #ff5733;
+}
+.muka:nth-child(2) {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: #33ff57;
+}
+.muka:nth-child(3) {
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: #5333ff;
+}
+.muka:nth-child(4) {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: #ff33b5;
+}
+.muka:nth-child(5) {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: #33b3ff;
+}
+.muka:nth-child(5) {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: #ff3333;
+}
+@keyframes animasi {
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+/* end animasi */
+
+    </style>
+    <div class="animasi">
+        <div class="container">
+          <div class="kubus">
+            <div class="muka"></div>
+            <div class="muka"></div>
+            <div class="muka"></div>
+            <div class="muka"></div>
+            <div class="muka"></div>
+            <div class="muka"></div>
+          </div>
+        </div>
+      </div>
+    
+</body>
+</html>
